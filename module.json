@@ -18,6 +18,29 @@
   },
   "id": "pf2e-trigger-trove",
   "manifest": "https://github.com/pedrogrullada/pf2e-trigger-trove/releases/latest/download/module.json",
+  "packFolders": [
+    {
+      "folders": [],
+      "name": "PF2e Trigger Trove",
+      "packs": [
+        "auxiliary-items"
+      ],
+      "sorting": "a"
+    }
+  ],
+  "packs": [
+    {
+      "label": "Auxiliary Items",
+      "name": "auxiliary-items",
+      "ownership": {
+        "ASSISTANT": "OWNER",
+        "PLAYER": "OBSERVER"
+      },
+      "path": "packs/auxiliary-items",
+      "system": "pf2e",
+      "type": "Item"
+    }
+  ],
   "relationships": {
     "systems": [
       {
