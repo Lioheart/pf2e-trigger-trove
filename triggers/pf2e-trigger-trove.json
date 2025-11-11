@@ -778,8 +778,8 @@
                     },
                     "key": "subtrigger-node",
                     "position": {
-                        "x": 624,
-                        "y": 199.75
+                        "x": 630,
+                        "y": 207.75
                     },
                     "target": "KbmYmEm4rMEedc9N",
                     "type": "subtrigger"
@@ -2468,12 +2468,14 @@
                         },
                         "out": {
                             "ids": [
-                                "NZj2A17pIg8WD0Og.inputs.in"
+                                "1o7Atl59ScSzKbB2.inputs.in"
                             ]
                         },
                         "PAWVQq94ohe1Jwsj": {
                             "ids": [
-                                "NZj2A17pIg8WD0Og.inputs.target"
+                                "NZj2A17pIg8WD0Og.inputs.target",
+                                "U2Lc430o7EbYCvwG.inputs.target",
+                                "1o7Atl59ScSzKbB2.inputs.target"
                             ]
                         },
                         "this": {
@@ -2499,8 +2501,8 @@
                     },
                     "key": "subtrigger-output",
                     "position": {
-                        "x": 953,
-                        "y": 202
+                        "x": 1335,
+                        "y": 231
                     },
                     "type": "subtrigger"
                 },
@@ -2509,7 +2511,7 @@
                     "inputs": {
                         "in": {
                             "ids": [
-                                "Y7APRXmdEhE6B4FN.outputs.out"
+                                "U2Lc430o7EbYCvwG.outputs.false"
                             ]
                         },
                         "slug": {
@@ -2537,8 +2539,8 @@
                         }
                     },
                     "position": {
-                        "x": 535.5,
-                        "y": 200.25
+                        "x": 912.5,
+                        "y": 178.25
                     },
                     "type": "condition"
                 },
@@ -2570,10 +2572,66 @@
                         }
                     },
                     "position": {
-                        "x": 770,
-                        "y": 202.75
+                        "x": 1150,
+                        "y": 230.75
                     },
                     "type": "action"
+                },
+                {
+                    "_id": "U2Lc430o7EbYCvwG",
+                    "inputs": {
+                        "in": {
+                            "ids": [
+                                "1o7Atl59ScSzKbB2.outputs.true"
+                            ]
+                        },
+                        "target": {
+                            "ids": [
+                                "Y7APRXmdEhE6B4FN.outputs.PAWVQq94ohe1Jwsj"
+                            ]
+                        }
+                    },
+                    "key": "is-dead",
+                    "outputs": {
+                        "false": {
+                            "ids": [
+                                "NZj2A17pIg8WD0Og.inputs.in"
+                            ]
+                        }
+                    },
+                    "position": {
+                        "x": 728,
+                        "y": 152.75
+                    },
+                    "type": "condition"
+                },
+                {
+                    "_id": "1o7Atl59ScSzKbB2",
+                    "inputs": {
+                        "in": {
+                            "ids": [
+                                "Y7APRXmdEhE6B4FN.outputs.out"
+                            ]
+                        },
+                        "target": {
+                            "ids": [
+                                "Y7APRXmdEhE6B4FN.outputs.PAWVQq94ohe1Jwsj"
+                            ]
+                        }
+                    },
+                    "key": "in-combat",
+                    "outputs": {
+                        "true": {
+                            "ids": [
+                                "U2Lc430o7EbYCvwG.inputs.in"
+                            ]
+                        }
+                    },
+                    "position": {
+                        "x": 541,
+                        "y": 151.75
+                    },
+                    "type": "condition"
                 }
             ]
         },
