@@ -3,7 +3,30 @@ A compilation of triggers to use with the [PF2e Trigger](https://github.com/reon
 
 ## How to use?
 Enable the module and you will see this module's triggers. They are **disabled** by default, and you should only enable triggers that you plan on using.
+
+Here's the list of abilities currently handled by triggers in some capacity.
+<details>
+  <summary>The List (As of 0.2.1)</summary>
+
+   - Feats & Features
+     - Champion's Resistance
+     - Goblin Scuttle
+     - Thermal Nimbus
+     - Ravel of Thorns
+     - One Shot, One Kill
+   - Monster Abilities
+     - Intense Heat
+     - Stench
+   - Spells
+     - Incendiary Aura
+     - Mountain Resilience
+     - Shields of the Spirit
+     - Vibrant Thorns
+</details>
+
 ## Contribute
+If you have a request for something the module could handle, or if you have a trigger idea that you can't make a PR for, you can [make a new issue](https://github.com/pedrogrullada/pf2e-trigger-trove/issues/new). No promises that I'll act on it, but I'll at least take a look.
+
 Pull requests are very welcome! I will review your PR as soon as I can, likely testing them out myself. Please bear with me if I take some time, or if I'm a bit fuzzy and ask for changes.
 
 If you want to contribute your own trigger, here's how you do it:
