@@ -6,14 +6,16 @@ Enable the module and you will see this module's triggers. They are **disabled**
 
 Here's the list of abilities currently handled by triggers in some capacity.
 <details>
-  <summary>The List (As of 0.2.1)</summary>
+  <summary>The List (As of 0.3.0)</summary>
 
    - Feats & Features
      - Champion's Resistance
      - Goblin Scuttle
-     - Thermal Nimbus
-     - Ravel of Thorns
      - One Shot, One Kill
+     - Ravel of Thorns
+     - Shared Stratagem
+     - Taunt
+     - Thermal Nimbus
    - Monster Abilities
      - Intense Heat
      - Stench
