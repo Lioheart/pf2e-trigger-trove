@@ -46,6 +46,65 @@ If you want to contribute your own trigger, here's how you do it:
 4. Name the file after the rule you're automating in kebab-case (for example `thermal-nimbus.json`), and place it in the most fitting folder in the `/triggers/` directory. Create a new one if none fit.
 5. Submit your PR!
 
+Here are some examples of what the trigger file you submit would look like.
+<details>
+  <summary>Single Trigger Example</summary>
+
+```json
+{
+  "_id": "12345abcde",
+  "description": "A very impressive trigger.",
+  "folder": "Spells",
+  "name": "Mega Punch (Attack Rolled)",
+  "nodes": [
+    {
+      "..."
+    },
+    {
+      "..."
+    }
+  ]
+}
+```
+</details>
+
+<details>
+  <summary>Multiple Triggers Example</summary>
+
+```json
+[
+  {
+    "_id": "poiuyt912837",
+    "description": "Charge kick at the start of a turn",
+    "folder": "Feats & Features",
+    "name": "Mega Kick (Turn Started)",
+    "nodes": [
+      {
+        "..."
+      },
+      {
+        "..."
+      }
+    ]
+  },
+  {
+    "_id": "qwerty987654",
+    "description": "Deliver the charged kick, ouchie.",
+    "folder": "Feats & Features",
+    "name": "Mega Kick (Attack Rolled)",
+    "nodes": [
+      {
+        "..."
+      },
+      {
+        "..."
+      }
+    ]
+  }
+]
+```
+</details>
+
 ### Adding Auxiliary Items
 
 If your trigger relies on auxiliary items (such as how we handle Safe Elements), you will want to add them to the module's packs, in addition to submitting your triggers. Follow these steps to add them in a human-readable way:
