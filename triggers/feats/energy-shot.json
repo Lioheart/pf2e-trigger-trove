@@ -207,8 +207,8 @@
                     }
                 },
                 "position": {
-                    "x": 775.5,
-                    "y": 196.75
+                    "x": 802.5,
+                    "y": 197.75
                 },
                 "type": "condition"
             },
@@ -239,8 +239,8 @@
                     }
                 },
                 "position": {
-                    "x": 1499,
-                    "y": 301.75
+                    "x": 1535,
+                    "y": 276.75
                 },
                 "type": "action"
             },
@@ -310,8 +310,8 @@
                     }
                 },
                 "position": {
-                    "x": 1013,
-                    "y": 197.75
+                    "x": 1050,
+                    "y": 199.75
                 },
                 "type": "action"
             },
@@ -343,8 +343,8 @@
                     }
                 },
                 "position": {
-                    "x": 1282,
-                    "y": 215.75
+                    "x": 1328,
+                    "y": 201.75
                 },
                 "type": "logic"
             },
@@ -366,8 +366,8 @@
                 },
                 "key": "remove-item",
                 "position": {
-                    "x": 1501,
-                    "y": 160.75
+                    "x": 1537,
+                    "y": 129.75
                 },
                 "type": "action"
             },
@@ -386,7 +386,7 @@
                     },
                     "predicate": {
                         "ids": [],
-                        "value": "[\n  {\n    \"or\": [\n      \"item:group:crossbow\",\n      \"item:group:firearm\"\n    ]\n  }\n]"
+                        "value": "[\n  {\n    \"not\": \"check:reroll\"\n  },\n  {\n    \"or\": [\n      \"item:group:crossbow\",\n      \"item:group:firearm\"\n    ]\n  }\n]"
                     }
                 },
                 "key": "match-predicate",
@@ -398,7 +398,7 @@
                     }
                 },
                 "position": {
-                    "x": 533,
+                    "x": 546,
                     "y": 197.75
                 },
                 "type": "condition"
@@ -421,8 +421,8 @@
                     }
                 },
                 "position": {
-                    "x": 1010.5,
-                    "y": 358.25
+                    "x": 1034.5,
+                    "y": 424.25
                 },
                 "type": "value"
             }
