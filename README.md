@@ -6,17 +6,22 @@ Enable the module and you will see this module's triggers. They are **disabled**
 
 Here's the list of abilities currently handled by triggers in some capacity.
 <details>
-  <summary>The List (As of 0.3.0)</summary>
+  <summary>The List (As of 0.4.0)</summary>
 
    - Feats & Features
+     - Aura of Courage
      - Champion's Resistance
+     - Crowned in Tempest's Fury
+     - Energy Shot
      - Goblin Scuttle
      - One Shot, One Kill
      - Ravel of Thorns
      - Shared Stratagem
+     - Swashbuckler Finisher
      - Taunt
      - Thermal Nimbus
    - Monster Abilities
+     - Frightful Presence
      - Intense Heat
      - Stench
    - Spells
