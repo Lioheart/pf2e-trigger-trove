@@ -1,10 +1,32 @@
+## 0.4.0
+- **New Triggers**
+  - **Aura of Courage**
+      - *Turn Ended*: When a frightened creature ends their turn inside an allies' champion's aura with Aura of Courage, they reduce their frightened value by 1.
+  - **Crowned in Tempest's Fury**
+      - *Aura Entered*: Roll a kineticist's Crowned in Tempest's Fury damage when a creature enters their kinetic aura. If you have Safe Elements, you can designate a party member to be unaffected by this trigger by dragging the Safe Elements auxiliary effect onto them from the kineticist's sheet.
+      - *Turn Ended*: Same thing, but on turn ended inside kinetic aura.
+  - **Energy Shots** (by Ettio)
+      - *Combatant Joined*: After confirming that Energy Shot is used, add its damage effect as well as an auxiliary effect to automatically track the shots as a Special Resource. 
+      - *Attack Rolled*: If the attacker has the Energy Shot auxiliary effect, deplete the Energy Shots resource by 1 after attacking with a crossbow or firearm. If there are no more Energy Shots left, remove both effects automatically.
+  - **Finisher** (by Rhonabwy)
+      - *Attack Rolled*: Remove Panache's effect when a finisher misses. If the attack is rerolled into a success, grant Panache back to enable finisher damage.
+      - *Damage Taken*: Remove Panache's effect from damage origin when finisher damage is dealt.
+  - **Frightful Presence**
+      - *Aura Entered*: Post the Frightful Presence ability to chat when a creature enters the aura. If you have PF2e Toolbelt Target Helper feature enabled, the message will have the triggering creature as its target.
+      - *Aura Entered (Enemies Only)*:  Same as the previous one, but it only affects enemies of the Frightful Presence creature. Just seems convenient.
+      - Obviously, only enable **ONE** of these two, if any.
+- **Trigger Updates**
+    - Generalize Thermal Nimbus (Damage) into generic Roll Item Damage subtrigger. We love recycling.
+    - Update Shields of the Spirit trigger to take Security into account.
+
 ## 0.3.0
 - Workflow improvements
   - Add release script (Chasarooni)
   - Split triggers into individual JSON files to be merged on build (Chasarooni)
-- Add new triggers
+- New triggers
   - Apply off-guard to a **Taunted** creature that attacks a creature other than the origin of its taunt effect. (Ettio) 
   - Add a **Shared Stratagem** effect to a Devise a Stratagem target, and post an effect to drag onto the designated ally. The target will be off-guard to the designated ally's next attack
+- Updated triggers
   - Use newly introduced Combatant Joined event for One Shot, One Kill trigger
 ## 0.2.2
 - Add missing auxiliary effect for One Shot, One Kill trigger
