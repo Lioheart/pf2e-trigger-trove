@@ -9,9 +9,7 @@
             "key": "attack-roll",
             "outputs": {
                 "other": {
-                    "ids": [
-                        "dhDKEodo68yOmboW.inputs.a"
-                    ]
+                    "ids": []
                 },
                 "out": {
                     "ids": [
@@ -19,11 +17,7 @@
                     ]
                 },
                 "this": {
-                    "ids": [
-                        "td8NBHCGOaaDPFEM.inputs.target",
-                        "MkP7YJUjgLgYw7Ub.inputs.target",
-                        "g0uNoPtxw7nnSCYY.inputs.target"
-                    ]
+                    "ids": []
                 }
             },
             "position": {
@@ -41,9 +35,7 @@
                     ]
                 },
                 "target": {
-                    "ids": [
-                        "HXDTKLxztzxoSJ0b.outputs.this"
-                    ]
+                    "ids": []
                 },
                 "uuid": {
                     "ids": [],
@@ -64,7 +56,7 @@
                 }
             },
             "position": {
-                "x": 787,
+                "x": 784,
                 "y": 204.75
             },
             "type": "condition"
@@ -100,7 +92,7 @@
             "outputs": {
                 "origin": {
                     "ids": [
-                        "dhDKEodo68yOmboW.inputs.b"
+                        "dhDKEodo68yOmboW.inputs.a"
                     ]
                 },
                 "out": {
@@ -120,12 +112,12 @@
             "inputs": {
                 "a": {
                     "ids": [
-                        "HXDTKLxztzxoSJ0b.outputs.other"
+                        "0KNgCnrMVD3mqXag.outputs.origin"
                     ]
                 },
                 "b": {
                     "ids": [
-                        "0KNgCnrMVD3mqXag.outputs.origin"
+                        "d67onhudKTrveNmy.outputs.output"
                     ]
                 },
                 "in": {
@@ -143,8 +135,8 @@
                 }
             },
             "position": {
-                "x": 1266.5,
-                "y": 298.75
+                "x": 1237.5,
+                "y": 260.75
             },
             "type": "logic"
         },
@@ -158,17 +150,18 @@
                 },
                 "target": {
                     "ids": [
-                        "HXDTKLxztzxoSJ0b.outputs.this"
+                        "d67onhudKTrveNmy.outputs.output"
                     ]
                 },
                 "uuid": {
+                    "ids": [],
                     "value": "Compendium.pf2e-trigger-trove.auxiliary-items.Item.r28SWVOzbBKh25gq"
                 }
             },
             "key": "create-item",
             "position": {
-                "x": 1472,
-                "y": 354
+                "x": 1429,
+                "y": 314
             },
             "type": "action"
         },
@@ -181,11 +174,10 @@
                     ]
                 },
                 "target": {
-                    "ids": [
-                        "HXDTKLxztzxoSJ0b.outputs.this"
-                    ]
+                    "ids": []
                 },
                 "uuid": {
+                    "ids": [],
                     "value": "Compendium.pf2e-trigger-trove.auxiliary-items.Item.r28SWVOzbBKh25gq"
                 }
             },
@@ -201,10 +193,40 @@
                 }
             },
             "position": {
-                "x": 544.5,
-                "y": 194.25
+                "x": 547.5,
+                "y": 199.25
             },
             "type": "condition"
+        },
+        {
+            "_id": "d67onhudKTrveNmy",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": false,
+                        "group": "",
+                        "key": "output",
+                        "type": "target"
+                    }
+                ],
+                "outs": []
+            },
+            "key": "variable-getter",
+            "outputs": {
+                "output": {
+                    "ids": [
+                        "dhDKEodo68yOmboW.inputs.b",
+                        "MkP7YJUjgLgYw7Ub.inputs.target"
+                    ]
+                }
+            },
+            "position": {
+                "x": 1079.5,
+                "y": 359.25
+            },
+            "target": "HXDTKLxztzxoSJ0b.outputs.other",
+            "type": "variable"
         }
     ],
     "variables": {}
