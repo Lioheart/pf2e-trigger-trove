@@ -9,9 +9,7 @@
             "key": "damage-taken",
             "outputs": {
                 "options": {
-                    "ids": [
-                        "9NxbUkUafRQUHkdD.inputs.list"
-                    ]
+                    "ids": []
                 },
                 "out": {
                     "ids": [
@@ -55,9 +53,7 @@
             "key": "inside-aura",
             "outputs": {
                 "source": {
-                    "ids": [
-                        "j5525TTAlWaXgkJ6.inputs.input"
-                    ]
+                    "ids": []
                 },
                 "true": {
                     "ids": [
@@ -85,7 +81,7 @@
                 },
                 "list": {
                     "ids": [
-                        "Gk1TCrQU7KShADph.outputs.options"
+                        "f58bLM3lB6GnmEcu.outputs.output"
                     ]
                 }
             },
@@ -130,30 +126,12 @@
             "key": "add-persistent",
             "outputs": {
                 "out": {
-                    "ids": [
-                        "430cmI71uWYclUOr.inputs.in"
-                    ]
+                    "ids": []
                 }
             },
             "position": {
-                "x": 1471,
-                "y": 192.75
-            },
-            "type": "action"
-        },
-        {
-            "_id": "430cmI71uWYclUOr",
-            "inputs": {
-                "in": {
-                    "ids": [
-                        "aYEg3vmlAJUQLUGe.outputs.out"
-                    ]
-                }
-            },
-            "key": "break-process",
-            "position": {
-                "x": 1690,
-                "y": 192.75
+                "x": 1496,
+                "y": 191.75
             },
             "type": "action"
         },
@@ -189,8 +167,8 @@
                 }
             },
             "position": {
-                "x": 1233,
-                "y": 193.75
+                "x": 1253,
+                "y": 196.75
             },
             "type": "action"
         },
@@ -217,7 +195,7 @@
                 },
                 "input": {
                     "ids": [
-                        "vIVj1DekKykYMU2c.outputs.source"
+                        "qHTLQ0VUaOM8dQnX.outputs.output"
                     ]
                 }
             },
@@ -235,10 +213,75 @@
                 }
             },
             "position": {
-                "x": 1040.5,
-                "y": 216.23000000000002
+                "x": 1046.5,
+                "y": 218.23000000000002
             },
             "type": "splitter"
+        },
+        {
+            "_id": "f58bLM3lB6GnmEcu",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": false,
+                        "group": "",
+                        "key": "output",
+                        "type": "list"
+                    }
+                ],
+                "outs": []
+            },
+            "key": "variable-getter",
+            "outputs": {
+                "output": {
+                    "ids": [
+                        "9NxbUkUafRQUHkdD.inputs.list"
+                    ]
+                }
+            },
+            "position": {
+                "x": 692.5,
+                "y": 363.25
+            },
+            "target": "Gk1TCrQU7KShADph.outputs.options",
+            "type": "variable"
+        },
+        {
+            "_id": "qHTLQ0VUaOM8dQnX",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": false,
+                        "group": "",
+                        "key": "output",
+                        "type": "target"
+                    }
+                ],
+                "outs": []
+            },
+            "key": "variable-getter",
+            "outputs": {
+                "output": {
+                    "ids": [
+                        "j5525TTAlWaXgkJ6.inputs.input"
+                    ]
+                }
+            },
+            "position": {
+                "x": 921.5,
+                "y": 336.25
+            },
+            "target": "vIVj1DekKykYMU2c.outputs.source",
+            "type": "variable"
         }
-    ]
+    ],
+    "variables": {
+        "vIVj1DekKykYMU2c.outputs.source": {
+            "global": false,
+            "label": "Aura Source",
+            "type": "target"
+        }
+    }
 }

@@ -12,10 +12,12 @@
           "ids": []
         },
         "out": {
-          "ids": ["hBnx5wZTCLye6DNn.inputs.in"]
+          "ids": [
+            "hBnx5wZTCLye6DNn.inputs.in"
+          ]
         },
         "this": {
-          "ids": ["4JSrEeyv35qqKNrt.inputs.b", "zf2FWakxaZnqFuxz.inputs.input"]
+          "ids": []
         }
       },
       "position": {
@@ -28,22 +30,22 @@
       "_id": "D6X01eF4x6HyAFA7",
       "inputs": {
         "in": {
-          "ids": ["hBnx5wZTCLye6DNn.outputs.true"]
+          "ids": [
+            "hBnx5wZTCLye6DNn.outputs.true"
+          ]
         }
       },
       "key": "scene-tokens",
       "outputs": {
         "other": {
           "ids": [
-            "4JSrEeyv35qqKNrt.inputs.a",
-            "2CWH75DDYutH7tfe.inputs.input",
-            "wjESrwI3H2zOVzs5.inputs.target",
-            "jdi3zDWGilUzgNqW.inputs.target",
-            "7CoqtPo8V6l16hzq.inputs.target"
+            "wjESrwI3H2zOVzs5.inputs.target"
           ]
         },
         "out": {
-          "ids": ["wjESrwI3H2zOVzs5.inputs.in"]
+          "ids": [
+            "wjESrwI3H2zOVzs5.inputs.in"
+          ]
         }
       },
       "position": {
@@ -60,16 +62,22 @@
           "value": 5
         },
         "b": {
-          "ids": ["4JSrEeyv35qqKNrt.outputs.distance"]
+          "ids": [
+            "4JSrEeyv35qqKNrt.outputs.distance"
+          ]
         },
         "in": {
-          "ids": ["4JSrEeyv35qqKNrt.outputs.out"]
+          "ids": [
+            "4JSrEeyv35qqKNrt.outputs.out"
+          ]
         }
       },
       "key": "eq-number",
       "outputs": {
         "true": {
-          "ids": ["2CWH75DDYutH7tfe.inputs.in"]
+          "ids": [
+            "2CWH75DDYutH7tfe.inputs.in"
+          ]
         }
       },
       "position": {
@@ -82,27 +90,37 @@
       "_id": "4JSrEeyv35qqKNrt",
       "inputs": {
         "a": {
-          "ids": ["D6X01eF4x6HyAFA7.outputs.other"]
+          "ids": [
+            "JCDvI1GVPAqCGed0.outputs.output"
+          ]
         },
         "b": {
-          "ids": ["alJQa0RbIZOQCIL8.outputs.this"]
+          "ids": [
+            "fFQut7fHwhd3VtU3.outputs.output"
+          ]
         },
         "in": {
-          "ids": ["wjESrwI3H2zOVzs5.outputs.true"]
+          "ids": [
+            "wjESrwI3H2zOVzs5.outputs.true"
+          ]
         }
       },
       "key": "distance-between",
       "outputs": {
         "distance": {
-          "ids": ["mTDBgDofyqUXCBiJ.inputs.b"]
+          "ids": [
+            "mTDBgDofyqUXCBiJ.inputs.b"
+          ]
         },
         "out": {
-          "ids": ["mTDBgDofyqUXCBiJ.inputs.in"]
+          "ids": [
+            "mTDBgDofyqUXCBiJ.inputs.in"
+          ]
         }
       },
       "position": {
-        "x": 1136.5,
-        "y": 302.75
+        "x": 1138.5,
+        "y": 326.75
       },
       "type": "action"
     },
@@ -110,10 +128,14 @@
       "_id": "Tf3cNvlMCqEkA19D",
       "inputs": {
         "in": {
-          "ids": ["jdi3zDWGilUzgNqW.outputs.true"]
+          "ids": [
+            "jdi3zDWGilUzgNqW.outputs.true"
+          ]
         },
         "item": {
-          "ids": ["wjESrwI3H2zOVzs5.outputs.item"]
+          "ids": [
+            "M2VTGYV1vFzXaIsR.outputs.output"
+          ]
         },
         "targeting": {
           "ids": []
@@ -126,8 +148,8 @@
         }
       },
       "position": {
-        "x": 2660,
-        "y": 409.75
+        "x": 2658,
+        "y": 453.75
       },
       "type": "action"
     },
@@ -142,23 +164,20 @@
             "key": "system|details|alliance",
             "label": "Scene Target Alliance",
             "type": "text"
-          },
-          {
-            "custom": true,
-            "group": "",
-            "key": "name",
-            "label": "Scene Target Alliance Name",
-            "type": "text"
           }
         ],
         "outs": []
       },
       "inputs": {
         "in": {
-          "ids": ["mTDBgDofyqUXCBiJ.outputs.true"]
+          "ids": [
+            "mTDBgDofyqUXCBiJ.outputs.true"
+          ]
         },
         "input": {
-          "ids": ["D6X01eF4x6HyAFA7.outputs.other"]
+          "ids": [
+            "4gnc7naoCD9RaJbH.outputs.output"
+          ]
         }
       },
       "key": "actor-splitter",
@@ -167,15 +186,17 @@
           "ids": []
         },
         "out": {
-          "ids": ["zf2FWakxaZnqFuxz.inputs.in"]
+          "ids": [
+            "zf2FWakxaZnqFuxz.inputs.in"
+          ]
         },
         "system|details|alliance": {
-          "ids": ["OJWSoNXjUnwwo4lG.inputs.a"]
+          "ids": []
         }
       },
       "position": {
-        "x": 1548.5,
-        "y": 365.23
+        "x": 1554.5,
+        "y": 358.23
       },
       "type": "splitter"
     },
@@ -196,24 +217,32 @@
       },
       "inputs": {
         "in": {
-          "ids": ["2CWH75DDYutH7tfe.outputs.out"]
+          "ids": [
+            "2CWH75DDYutH7tfe.outputs.out"
+          ]
         },
         "input": {
-          "ids": ["alJQa0RbIZOQCIL8.outputs.this"]
+          "ids": [
+            "JeZ1zZ3w6gRZKQBZ.outputs.output"
+          ]
         }
       },
       "key": "actor-splitter",
       "outputs": {
         "out": {
-          "ids": ["OJWSoNXjUnwwo4lG.inputs.in"]
+          "ids": [
+            "OJWSoNXjUnwwo4lG.inputs.in"
+          ]
         },
         "system|details|alliance": {
-          "ids": ["OJWSoNXjUnwwo4lG.inputs.b"]
+          "ids": [
+            "OJWSoNXjUnwwo4lG.inputs.a"
+          ]
         }
       },
       "position": {
-        "x": 1840.5,
-        "y": 385.23
+        "x": 1820.5,
+        "y": 398.23
       },
       "type": "splitter"
     },
@@ -221,24 +250,32 @@
       "_id": "OJWSoNXjUnwwo4lG",
       "inputs": {
         "a": {
-          "ids": ["2CWH75DDYutH7tfe.outputs.system|details|alliance"]
+          "ids": [
+            "zf2FWakxaZnqFuxz.outputs.system|details|alliance"
+          ]
         },
         "b": {
-          "ids": ["zf2FWakxaZnqFuxz.outputs.system|details|alliance"]
+          "ids": [
+            "vdblY9tVxmrW9nMT.outputs.output"
+          ]
         },
         "in": {
-          "ids": ["zf2FWakxaZnqFuxz.outputs.out"]
+          "ids": [
+            "zf2FWakxaZnqFuxz.outputs.out"
+          ]
         }
       },
       "key": "eq-text",
       "outputs": {
         "true": {
-          "ids": ["jdi3zDWGilUzgNqW.inputs.in"]
+          "ids": [
+            "jdi3zDWGilUzgNqW.inputs.in"
+          ]
         }
       },
       "position": {
-        "x": 2123,
-        "y": 387.75
+        "x": 2092,
+        "y": 405.75
       },
       "type": "logic"
     },
@@ -246,13 +283,17 @@
       "_id": "hBnx5wZTCLye6DNn",
       "inputs": {
         "in": {
-          "ids": ["alJQa0RbIZOQCIL8.outputs.out"]
+          "ids": [
+            "alJQa0RbIZOQCIL8.outputs.out"
+          ]
         }
       },
       "key": "in-combat",
       "outputs": {
         "true": {
-          "ids": ["D6X01eF4x6HyAFA7.inputs.in"]
+          "ids": [
+            "D6X01eF4x6HyAFA7.inputs.in"
+          ]
         }
       },
       "position": {
@@ -265,10 +306,14 @@
       "_id": "wjESrwI3H2zOVzs5",
       "inputs": {
         "in": {
-          "ids": ["D6X01eF4x6HyAFA7.outputs.out"]
+          "ids": [
+            "D6X01eF4x6HyAFA7.outputs.out"
+          ]
         },
         "target": {
-          "ids": ["D6X01eF4x6HyAFA7.outputs.other"]
+          "ids": [
+            "D6X01eF4x6HyAFA7.outputs.other"
+          ]
         },
         "uuid": {
           "ids": [],
@@ -278,15 +323,17 @@
       "key": "has-item",
       "outputs": {
         "item": {
-          "ids": ["Tf3cNvlMCqEkA19D.inputs.item"]
+          "ids": []
         },
         "true": {
-          "ids": ["4JSrEeyv35qqKNrt.inputs.in"]
+          "ids": [
+            "4JSrEeyv35qqKNrt.inputs.in"
+          ]
         }
       },
       "position": {
-        "x": 903.5,
-        "y": 285.25
+        "x": 901.5,
+        "y": 301.25
       },
       "type": "condition"
     },
@@ -294,28 +341,36 @@
       "_id": "jdi3zDWGilUzgNqW",
       "inputs": {
         "in": {
-          "ids": ["OJWSoNXjUnwwo4lG.outputs.true"]
+          "ids": [
+            "OJWSoNXjUnwwo4lG.outputs.true"
+          ]
         },
         "prompt": {
           "ids": [],
           "value": "<p>Your ally has moved into an adjacent space, possibly ending their move action there. Do you want to use Goblin Scuttle?</p>"
         },
         "target": {
-          "ids": ["D6X01eF4x6HyAFA7.outputs.other"]
+          "ids": [
+            "WCPUkGNUicG5rjCN.outputs.output"
+          ]
         },
         "title": {
-          "ids": ["7CoqtPo8V6l16hzq.outputs.label"]
+          "ids": [
+            "7CoqtPo8V6l16hzq.outputs.label"
+          ]
         }
       },
       "key": "await-confirm",
       "outputs": {
         "true": {
-          "ids": ["Tf3cNvlMCqEkA19D.inputs.in"]
+          "ids": [
+            "Tf3cNvlMCqEkA19D.inputs.in"
+          ]
         }
       },
       "position": {
-        "x": 2378,
-        "y": 387.23
+        "x": 2356,
+        "y": 418.23
       },
       "type": "action"
     },
@@ -327,20 +382,273 @@
           "value": "Goblin Scuttle"
         },
         "target": {
-          "ids": ["D6X01eF4x6HyAFA7.outputs.other"]
+          "ids": [
+            "J65fKwsdnIGK3z2f.outputs.output"
+          ]
         }
       },
       "key": "named-label-actor",
       "outputs": {
         "label": {
-          "ids": ["jdi3zDWGilUzgNqW.inputs.title"]
+          "ids": [
+            "jdi3zDWGilUzgNqW.inputs.title"
+          ]
         }
       },
       "position": {
-        "x": 2194.5,
-        "y": 551.75
+        "x": 2094.5,
+        "y": 540.75
       },
       "type": "value"
+    },
+    {
+      "_id": "JCDvI1GVPAqCGed0",
+      "custom": {
+        "inputs": [],
+        "outputs": [
+          {
+            "custom": false,
+            "group": "",
+            "key": "output",
+            "type": "target"
+          }
+        ],
+        "outs": []
+      },
+      "key": "variable-getter",
+      "outputs": {
+        "output": {
+          "ids": [
+            "4JSrEeyv35qqKNrt.inputs.a"
+          ]
+        }
+      },
+      "position": {
+        "x": 965.5,
+        "y": 452.25
+      },
+      "target": "alJQa0RbIZOQCIL8.outputs.this",
+      "type": "variable"
+    },
+    {
+      "_id": "fFQut7fHwhd3VtU3",
+      "custom": {
+        "inputs": [],
+        "outputs": [
+          {
+            "custom": false,
+            "group": "",
+            "key": "output",
+            "type": "target"
+          }
+        ],
+        "outs": []
+      },
+      "key": "variable-getter",
+      "outputs": {
+        "output": {
+          "ids": [
+            "4JSrEeyv35qqKNrt.inputs.b"
+          ]
+        }
+      },
+      "position": {
+        "x": 959.5,
+        "y": 502.25
+      },
+      "target": "D6X01eF4x6HyAFA7.outputs.other",
+      "type": "variable"
+    },
+    {
+      "_id": "4gnc7naoCD9RaJbH",
+      "custom": {
+        "inputs": [],
+        "outputs": [
+          {
+            "custom": false,
+            "group": "",
+            "key": "output",
+            "type": "target"
+          }
+        ],
+        "outs": []
+      },
+      "key": "variable-getter",
+      "outputs": {
+        "output": {
+          "ids": [
+            "2CWH75DDYutH7tfe.inputs.input"
+          ]
+        }
+      },
+      "position": {
+        "x": 1421.5,
+        "y": 470.25
+      },
+      "target": "D6X01eF4x6HyAFA7.outputs.other",
+      "type": "variable"
+    },
+    {
+      "_id": "JeZ1zZ3w6gRZKQBZ",
+      "custom": {
+        "inputs": [],
+        "outputs": [
+          {
+            "custom": false,
+            "group": "",
+            "key": "output",
+            "type": "target"
+          }
+        ],
+        "outs": []
+      },
+      "key": "variable-getter",
+      "outputs": {
+        "output": {
+          "ids": [
+            "zf2FWakxaZnqFuxz.inputs.input"
+          ]
+        }
+      },
+      "position": {
+        "x": 1719.5,
+        "y": 506.25
+      },
+      "target": "alJQa0RbIZOQCIL8.outputs.this",
+      "type": "variable"
+    },
+    {
+      "_id": "vdblY9tVxmrW9nMT",
+      "custom": {
+        "inputs": [],
+        "outputs": [
+          {
+            "custom": false,
+            "group": "",
+            "key": "output",
+            "type": "text"
+          }
+        ],
+        "outs": []
+      },
+      "key": "variable-getter",
+      "outputs": {
+        "output": {
+          "ids": [
+            "OJWSoNXjUnwwo4lG.inputs.b"
+          ]
+        }
+      },
+      "position": {
+        "x": 1884.5,
+        "y": 506.25
+      },
+      "target": "2CWH75DDYutH7tfe.outputs.system|details|alliance",
+      "type": "variable"
+    },
+    {
+      "_id": "J65fKwsdnIGK3z2f",
+      "custom": {
+        "inputs": [],
+        "outputs": [
+          {
+            "custom": false,
+            "group": "",
+            "key": "output",
+            "type": "target"
+          }
+        ],
+        "outs": []
+      },
+      "key": "variable-getter",
+      "outputs": {
+        "output": {
+          "ids": [
+            "7CoqtPo8V6l16hzq.inputs.target"
+          ]
+        }
+      },
+      "position": {
+        "x": 1943.5,
+        "y": 607.25
+      },
+      "target": "D6X01eF4x6HyAFA7.outputs.other",
+      "type": "variable"
+    },
+    {
+      "_id": "WCPUkGNUicG5rjCN",
+      "custom": {
+        "inputs": [],
+        "outputs": [
+          {
+            "custom": false,
+            "group": "",
+            "key": "output",
+            "type": "target"
+          }
+        ],
+        "outs": []
+      },
+      "key": "variable-getter",
+      "outputs": {
+        "output": {
+          "ids": [
+            "jdi3zDWGilUzgNqW.inputs.target"
+          ]
+        }
+      },
+      "position": {
+        "x": 2191.5,
+        "y": 645.25
+      },
+      "target": "D6X01eF4x6HyAFA7.outputs.other",
+      "type": "variable"
+    },
+    {
+      "_id": "M2VTGYV1vFzXaIsR",
+      "custom": {
+        "inputs": [],
+        "outputs": [
+          {
+            "custom": false,
+            "group": "",
+            "key": "output",
+            "type": "item"
+          }
+        ],
+        "outs": []
+      },
+      "key": "variable-getter",
+      "outputs": {
+        "output": {
+          "ids": [
+            "Tf3cNvlMCqEkA19D.inputs.item"
+          ]
+        }
+      },
+      "position": {
+        "x": 2501.5,
+        "y": 585.25
+      },
+      "target": "wjESrwI3H2zOVzs5.outputs.item",
+      "type": "variable"
     }
-  ]
+  ],
+  "variables": {
+    "2CWH75DDYutH7tfe.outputs.system|details|alliance": {
+      "global": false,
+      "label": "Scene Target Alliance",
+      "type": "text"
+    },
+    "D6X01eF4x6HyAFA7.outputs.other": {
+      "global": false,
+      "label": "Scene Target",
+      "type": "target"
+    },
+    "wjESrwI3H2zOVzs5.outputs.item": {
+      "global": false,
+      "label": "Goblin Scuttle",
+      "type": "item"
+    }
+  }
 }

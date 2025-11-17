@@ -404,9 +404,7 @@
                 "key": "attack-roll",
                 "outputs": {
                     "other": {
-                        "ids": [
-                            "T4fvzd39ejXTnm4o.inputs.target"
-                        ]
+                        "ids": []
                     },
                     "out": {
                         "ids": [
@@ -434,7 +432,7 @@
                     },
                     "target": {
                         "ids": [
-                            "5pDBmGdrgI7MxYQc.outputs.other"
+                            "KkxvIjgx956wGB9b.outputs.output"
                         ]
                     },
                     "trigger": {
@@ -446,7 +444,7 @@
                 "outputs": {
                     "true": {
                         "ids": [
-                            "18be2J0kiGOnV9mE.inputs.in"
+                            "9ldc5OSrWqxnWSys.inputs.in"
                         ]
                     }
                 },
@@ -457,37 +455,6 @@
                 "type": "condition"
             },
             {
-                "_id": "18be2J0kiGOnV9mE",
-                "inputs": {
-                    "in": {
-                        "ids": [
-                            "T4fvzd39ejXTnm4o.outputs.true"
-                        ]
-                    },
-                    "target": {
-                        "ids": []
-                    },
-                    "uuid": {
-                        "ids": [
-                            "9cyyp8WRdt1FhZpd.outputs.item"
-                        ]
-                    }
-                },
-                "key": "remove-item",
-                "outputs": {
-                    "out": {
-                        "ids": [
-                            "qcyPdff4QG1ZxqdW.inputs.in"
-                        ]
-                    }
-                },
-                "position": {
-                    "x": 1034,
-                    "y": 196.75
-                },
-                "type": "action"
-            },
-            {
                 "_id": "qcyPdff4QG1ZxqdW",
                 "inputs": {
                     "identifier": {
@@ -496,7 +463,7 @@
                     },
                     "in": {
                         "ids": [
-                            "18be2J0kiGOnV9mE.outputs.out"
+                            "9ldc5OSrWqxnWSys.outputs.out"
                         ]
                     },
                     "target": {
@@ -511,8 +478,8 @@
                 },
                 "key": "remove-temporary",
                 "position": {
-                    "x": 1260,
-                    "y": 194.75
+                    "x": 1202,
+                    "y": 242.75
                 },
                 "type": "action"
             },
@@ -539,8 +506,8 @@
                     }
                 },
                 "position": {
-                    "x": 1247.5,
-                    "y": 367.25
+                    "x": 1197.5,
+                    "y": 406.25
                 },
                 "target": "5pDBmGdrgI7MxYQc.outputs.other",
                 "type": "variable"
@@ -561,9 +528,7 @@
                 "key": "has-item",
                 "outputs": {
                     "item": {
-                        "ids": [
-                            "18be2J0kiGOnV9mE.inputs.uuid"
-                        ]
+                        "ids": []
                     },
                     "true": {
                         "ids": [
@@ -576,7 +541,100 @@
                     "y": 199.75
                 },
                 "type": "condition"
+            },
+            {
+                "_id": "KkxvIjgx956wGB9b",
+                "custom": {
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "custom": false,
+                            "group": "",
+                            "key": "output",
+                            "type": "target"
+                        }
+                    ],
+                    "outs": []
+                },
+                "key": "variable-getter",
+                "outputs": {
+                    "output": {
+                        "ids": [
+                            "T4fvzd39ejXTnm4o.inputs.target"
+                        ]
+                    }
+                },
+                "position": {
+                    "x": 623.5,
+                    "y": 347.25
+                },
+                "target": "5pDBmGdrgI7MxYQc.outputs.other",
+                "type": "variable"
+            },
+            {
+                "_id": "9ldc5OSrWqxnWSys",
+                "inputs": {
+                    "in": {
+                        "ids": [
+                            "T4fvzd39ejXTnm4o.outputs.true"
+                        ]
+                    },
+                    "item": {
+                        "ids": [
+                            "CBl1SIsLFo7dajzd.outputs.output"
+                        ]
+                    }
+                },
+                "key": "delete-item",
+                "outputs": {
+                    "out": {
+                        "ids": [
+                            "qcyPdff4QG1ZxqdW.inputs.in"
+                        ]
+                    }
+                },
+                "position": {
+                    "x": 1013,
+                    "y": 222.5
+                },
+                "type": "action"
+            },
+            {
+                "_id": "CBl1SIsLFo7dajzd",
+                "custom": {
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "custom": false,
+                            "group": "",
+                            "key": "output",
+                            "type": "item"
+                        }
+                    ],
+                    "outs": []
+                },
+                "key": "variable-getter",
+                "outputs": {
+                    "output": {
+                        "ids": [
+                            "9ldc5OSrWqxnWSys.inputs.item"
+                        ]
+                    }
+                },
+                "position": {
+                    "x": 950.5,
+                    "y": 362.25
+                },
+                "target": "9cyyp8WRdt1FhZpd.outputs.item",
+                "type": "variable"
             }
-        ]
+        ],
+        "variables": {
+            "9cyyp8WRdt1FhZpd.outputs.item": {
+                "global": false,
+                "label": "Aux Effect",
+                "type": "item"
+            }
+        }
     }
 ]

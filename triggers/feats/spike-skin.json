@@ -14,9 +14,7 @@
                     ]
                 },
                 "other": {
-                    "ids": [
-                        "pLaF3VCl3WulGrMr.inputs.target"
-                    ]
+                    "ids": []
                 },
                 "out": {
                     "ids": [
@@ -24,9 +22,7 @@
                     ]
                 },
                 "outcome": {
-                    "ids": [
-                        "6gLaDZHkvQWmQ5yx.inputs.a"
-                    ]
+                    "ids": []
                 }
             },
             "position": {
@@ -45,7 +41,7 @@
                 },
                 "target": {
                     "ids": [
-                        "E43uf8iRfdGSBWBY.outputs.other"
+                        "FOKVGWcaxTL93lgP.outputs.output"
                     ]
                 },
                 "uuid": {
@@ -56,9 +52,7 @@
             "key": "has-item",
             "outputs": {
                 "item": {
-                    "ids": [
-                        "gIgkxkTBPlUVNTOH.inputs.effect"
-                    ]
+                    "ids": []
                 },
                 "true": {
                     "ids": [
@@ -77,7 +71,7 @@
             "inputs": {
                 "a": {
                     "ids": [
-                        "E43uf8iRfdGSBWBY.outputs.outcome"
+                        "Ir326iItq4GmhN33.outputs.output"
                     ]
                 },
                 "b": {
@@ -116,8 +110,8 @@
                 }
             },
             "position": {
-                "x": 837.5,
-                "y": 336.25
+                "x": 805.5,
+                "y": 373.25
             },
             "type": "value"
         },
@@ -126,7 +120,7 @@
             "inputs": {
                 "effect": {
                     "ids": [
-                        "pLaF3VCl3WulGrMr.outputs.item"
+                        "IoOX2N6iwRwPzxWz.outputs.output"
                     ]
                 },
                 "in": {
@@ -137,8 +131,8 @@
             },
             "key": "effect-duration",
             "position": {
-                "x": 1204,
-                "y": 202.75
+                "x": 1207,
+                "y": 205.75
             },
             "type": "action"
         },
@@ -173,6 +167,100 @@
                 "y": 201.75
             },
             "type": "condition"
+        },
+        {
+            "_id": "Ir326iItq4GmhN33",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": false,
+                        "group": "",
+                        "key": "output",
+                        "type": "number"
+                    }
+                ],
+                "outs": []
+            },
+            "key": "variable-getter",
+            "outputs": {
+                "output": {
+                    "ids": [
+                        "6gLaDZHkvQWmQ5yx.inputs.a"
+                    ]
+                }
+            },
+            "position": {
+                "x": 886.5,
+                "y": 336.25
+            },
+            "target": "E43uf8iRfdGSBWBY.outputs.outcome",
+            "type": "variable"
+        },
+        {
+            "_id": "IoOX2N6iwRwPzxWz",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": false,
+                        "group": "",
+                        "key": "output",
+                        "type": "item"
+                    }
+                ],
+                "outs": []
+            },
+            "key": "variable-getter",
+            "outputs": {
+                "output": {
+                    "ids": [
+                        "gIgkxkTBPlUVNTOH.inputs.effect"
+                    ]
+                }
+            },
+            "position": {
+                "x": 1105.5,
+                "y": 358.25
+            },
+            "target": "pLaF3VCl3WulGrMr.outputs.item",
+            "type": "variable"
+        },
+        {
+            "_id": "FOKVGWcaxTL93lgP",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": false,
+                        "group": "",
+                        "key": "output",
+                        "type": "target"
+                    }
+                ],
+                "outs": []
+            },
+            "key": "variable-getter",
+            "outputs": {
+                "output": {
+                    "ids": [
+                        "pLaF3VCl3WulGrMr.inputs.target"
+                    ]
+                }
+            },
+            "position": {
+                "x": 629.5,
+                "y": 335.25
+            },
+            "target": "E43uf8iRfdGSBWBY.outputs.other",
+            "type": "variable"
         }
-    ]
+    ],
+    "variables": {
+        "pLaF3VCl3WulGrMr.outputs.item": {
+            "global": false,
+            "label": "Effect",
+            "type": "item"
+        }
+    }
 }
