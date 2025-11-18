@@ -1,3 +1,7 @@
+## 0.5.1
+- Fix broken links in Mirror Image and Trickster's Mirrors descriptions.
+- Reclassify critical specialization as equipment triggers
+
 ## 0.5.0
 - **New Triggers**	
   - **Amulet's Abeyance**

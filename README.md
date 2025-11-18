@@ -8,6 +8,8 @@ Here's the list of abilities currently handled by triggers in some capacity.
 <details>
   <summary>The List (As of 0.5.0)</summary>
 
+   - Equipment
+     - Critical Specialization (Bow, Spear, and Sword only)
    - Feats & Features
      - Amulet's Abeyance
      - Aura of Courage
