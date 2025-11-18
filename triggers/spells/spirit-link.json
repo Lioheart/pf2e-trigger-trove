@@ -1,0 +1,827 @@
+{
+    "_id": "sTiUh3h7Ft4VBqpg",
+    "description": "When a creature starts their turn and they have a @UUID[Compendium.pf2e.spells-srd.Item.yHujiDQPdtXW797e]{Spirit Link} auxiliary effect that originated from themselves, then check scene tokens for other creatures with an identical effect. If there is such a creature, check if they're not at their Hit Point maximum and if so, send a damage-healing-hybrid roll to chat for both parties of spirit link to apply to themselves.",
+    "folder": "Spells",
+    "name": "Spirit Link (Turn Started)",
+    "nodes": [
+        {
+            "_id": "5ihYn9u4nbO0s2v5",
+            "key": "turn-start",
+            "outputs": {
+                "out": {
+                    "ids": [
+                        "1vgIr9cH83WjUQua.inputs.in"
+                    ]
+                }
+            },
+            "position": {
+                "x": 350,
+                "y": 200
+            },
+            "type": "event"
+        },
+        {
+            "_id": "1vgIr9cH83WjUQua",
+            "inputs": {
+                "in": {
+                    "ids": [
+                        "5ihYn9u4nbO0s2v5.outputs.out"
+                    ]
+                },
+                "uuid": {
+                    "value": "Compendium.pf2e-trigger-trove.auxiliary-items.Item.rn7KiPMH6u7C6mUD"
+                }
+            },
+            "key": "has-item",
+            "outputs": {
+                "item": {
+                    "ids": [
+                        "nIYuadExTAcOAIG6.inputs.input"
+                    ]
+                },
+                "true": {
+                    "ids": [
+                        "nIYuadExTAcOAIG6.inputs.in"
+                    ]
+                }
+            },
+            "position": {
+                "x": 539,
+                "y": 265.75
+            },
+            "type": "condition"
+        },
+        {
+            "_id": "nIYuadExTAcOAIG6",
+            "custom": {
+                "outputs": [
+                    {
+                        "custom": true,
+                        "group": "",
+                        "key": "origin",
+                        "label": "Origin",
+                        "type": "target"
+                    },
+                    {
+                        "custom": true,
+                        "group": "",
+                        "key": "level",
+                        "label": "Effect Level",
+                        "type": "number"
+                    }
+                ]
+            },
+            "inputs": {
+                "in": {
+                    "ids": [
+                        "1vgIr9cH83WjUQua.outputs.true"
+                    ]
+                },
+                "input": {
+                    "ids": [
+                        "1vgIr9cH83WjUQua.outputs.item"
+                    ]
+                }
+            },
+            "key": "item-splitter",
+            "outputs": {
+                "origin": {
+                    "ids": [
+                        "JTlPmaiM10pFr8lR.inputs.a"
+                    ]
+                },
+                "out": {
+                    "ids": [
+                        "JTlPmaiM10pFr8lR.inputs.in"
+                    ]
+                }
+            },
+            "position": {
+                "x": 778.5,
+                "y": 347.23
+            },
+            "type": "splitter"
+        },
+        {
+            "_id": "JTlPmaiM10pFr8lR",
+            "inputs": {
+                "a": {
+                    "ids": [
+                        "nIYuadExTAcOAIG6.outputs.origin"
+                    ]
+                },
+                "b": {
+                    "ids": [
+                        "Yw7XBBdOA8nuq2Dg.outputs.output"
+                    ]
+                },
+                "in": {
+                    "ids": [
+                        "nIYuadExTAcOAIG6.outputs.out"
+                    ]
+                }
+            },
+            "key": "eq-actor",
+            "outputs": {
+                "true": {
+                    "ids": [
+                        "P0t72oPHvb15fNCn.inputs.in"
+                    ]
+                }
+            },
+            "position": {
+                "x": 975,
+                "y": 400.75
+            },
+            "type": "logic"
+        },
+        {
+            "_id": "Yw7XBBdOA8nuq2Dg",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": false,
+                        "group": "",
+                        "key": "output",
+                        "type": "target"
+                    }
+                ],
+                "outs": []
+            },
+            "key": "variable-getter",
+            "outputs": {
+                "output": {
+                    "ids": [
+                        "JTlPmaiM10pFr8lR.inputs.b"
+                    ]
+                }
+            },
+            "position": {
+                "x": 803.5,
+                "y": 477.25
+            },
+            "target": "5ihYn9u4nbO0s2v5.outputs.this",
+            "type": "variable"
+        },
+        {
+            "_id": "P0t72oPHvb15fNCn",
+            "inputs": {
+                "in": {
+                    "ids": [
+                        "JTlPmaiM10pFr8lR.outputs.true"
+                    ]
+                }
+            },
+            "key": "scene-tokens",
+            "outputs": {
+                "other": {
+                    "ids": [
+                        "aEDUz9kBMgKOj0UA.inputs.a"
+                    ]
+                },
+                "out": {
+                    "ids": [
+                        "aEDUz9kBMgKOj0UA.inputs.in"
+                    ]
+                }
+            },
+            "position": {
+                "x": 1160,
+                "y": 473.23
+            },
+            "type": "action"
+        },
+        {
+            "_id": "3KnggXiDcDNVYHwu",
+            "inputs": {
+                "in": {
+                    "ids": [
+                        "aEDUz9kBMgKOj0UA.outputs.false"
+                    ]
+                },
+                "target": {
+                    "ids": [
+                        "EJVHOhvR7aNu3ros.outputs.output"
+                    ]
+                },
+                "uuid": {
+                    "ids": [],
+                    "value": "Compendium.pf2e-trigger-trove.auxiliary-items.Item.rn7KiPMH6u7C6mUD"
+                }
+            },
+            "key": "has-item",
+            "outputs": {
+                "item": {
+                    "ids": [
+                        "YfY5yMjDo3aQ8smb.inputs.input"
+                    ]
+                },
+                "true": {
+                    "ids": [
+                        "YfY5yMjDo3aQ8smb.inputs.in"
+                    ]
+                }
+            },
+            "position": {
+                "x": 1535,
+                "y": 574.75
+            },
+            "type": "condition"
+        },
+        {
+            "_id": "YfY5yMjDo3aQ8smb",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": true,
+                        "group": "",
+                        "key": "origin",
+                        "label": "Origin",
+                        "type": "target"
+                    }
+                ],
+                "outs": []
+            },
+            "inputs": {
+                "in": {
+                    "ids": [
+                        "3KnggXiDcDNVYHwu.outputs.true"
+                    ]
+                },
+                "input": {
+                    "ids": [
+                        "3KnggXiDcDNVYHwu.outputs.item"
+                    ]
+                }
+            },
+            "key": "item-splitter",
+            "outputs": {
+                "origin": {
+                    "ids": [
+                        "2BmdcVjvExQKOVvF.inputs.a"
+                    ]
+                },
+                "out": {
+                    "ids": [
+                        "2BmdcVjvExQKOVvF.inputs.in"
+                    ]
+                }
+            },
+            "position": {
+                "x": 1771.5,
+                "y": 642.23
+            },
+            "type": "splitter"
+        },
+        {
+            "_id": "2BmdcVjvExQKOVvF",
+            "inputs": {
+                "a": {
+                    "ids": [
+                        "YfY5yMjDo3aQ8smb.outputs.origin"
+                    ]
+                },
+                "b": {
+                    "ids": [
+                        "7hFejgW2Ib293e9Z.outputs.output"
+                    ]
+                },
+                "in": {
+                    "ids": [
+                        "YfY5yMjDo3aQ8smb.outputs.out"
+                    ]
+                }
+            },
+            "key": "eq-actor",
+            "outputs": {
+                "true": {
+                    "ids": [
+                        "ZaTbSV3ts4sb4sCS.inputs.in"
+                    ]
+                }
+            },
+            "position": {
+                "x": 1957,
+                "y": 669.75
+            },
+            "type": "logic"
+        },
+        {
+            "_id": "7hFejgW2Ib293e9Z",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": false,
+                        "group": "",
+                        "key": "output",
+                        "type": "target"
+                    }
+                ],
+                "outs": []
+            },
+            "key": "variable-getter",
+            "outputs": {
+                "output": {
+                    "ids": [
+                        "2BmdcVjvExQKOVvF.inputs.b"
+                    ]
+                }
+            },
+            "position": {
+                "x": 1797.5,
+                "y": 759.25
+            },
+            "target": "5ihYn9u4nbO0s2v5.outputs.this",
+            "type": "variable"
+        },
+        {
+            "_id": "1ks47feRs7FyKufE",
+            "inputs": {
+                "formula": {
+                    "value": "(2*@x)"
+                },
+                "in": {
+                    "ids": [
+                        "mwEAca8RYkRyfE2A.outputs.true"
+                    ]
+                },
+                "x": {
+                    "ids": [
+                        "1UWY9ZxzbIEZrdgM.outputs.output"
+                    ]
+                }
+            },
+            "key": "replace-x",
+            "outputs": {
+                "out": {
+                    "ids": [
+                        "qITOKOStz9bfrJLx.inputs.in"
+                    ]
+                },
+                "result": {
+                    "ids": [
+                        "qITOKOStz9bfrJLx.inputs.formula"
+                    ]
+                }
+            },
+            "position": {
+                "x": 2751,
+                "y": 844.75
+            },
+            "type": "action"
+        },
+        {
+            "_id": "1UWY9ZxzbIEZrdgM",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": false,
+                        "group": "",
+                        "key": "output",
+                        "type": "number"
+                    }
+                ],
+                "outs": []
+            },
+            "key": "variable-getter",
+            "outputs": {
+                "output": {
+                    "ids": [
+                        "1ks47feRs7FyKufE.inputs.x"
+                    ]
+                }
+            },
+            "position": {
+                "x": 2609.5,
+                "y": 971.25
+            },
+            "target": "nIYuadExTAcOAIG6.outputs.level",
+            "type": "variable"
+        },
+        {
+            "_id": "qITOKOStz9bfrJLx",
+            "inputs": {
+                "formula": {
+                    "ids": [
+                        "1ks47feRs7FyKufE.outputs.result"
+                    ]
+                },
+                "in": {
+                    "ids": [
+                        "1ks47feRs7FyKufE.outputs.out"
+                    ]
+                },
+                "roll": {
+                    "ids": [
+                        "PZGLRxLnnCkuXknX.outputs.roll"
+                    ]
+                },
+                "target": {
+                    "ids": [
+                        "P3QFowJg38wIRDnw.outputs.output"
+                    ]
+                }
+            },
+            "key": "roll-damage",
+            "outputs": {
+                "out": {
+                    "ids": []
+                }
+            },
+            "position": {
+                "x": 3005,
+                "y": 862.75
+            },
+            "type": "action"
+        },
+        {
+            "_id": "PZGLRxLnnCkuXknX",
+            "inputs": {
+                "item": {
+                    "ids": [
+                        "cBdrfbsRZvOeqWxk.outputs.item"
+                    ]
+                },
+                "note": {
+                    "value": "<p>At the start of each of your turns, if the target is below maximum Hit Points, it regains 2 Hit Points per spell rank of <em>spirit link</em> (or the difference between its current and maximum Hit Points, if that's lower). You lose as many Hit Points as the target regained.</p>"
+                },
+                "origin": {
+                    "ids": [
+                        "NvWEqA2sznIDJ9tK.outputs.output"
+                    ]
+                }
+            },
+            "key": "roll-data",
+            "outputs": {
+                "roll": {
+                    "ids": [
+                        "qITOKOStz9bfrJLx.inputs.roll"
+                    ]
+                }
+            },
+            "position": {
+                "x": 2864.5,
+                "y": 1090.25
+            },
+            "type": "value"
+        },
+        {
+            "_id": "cBdrfbsRZvOeqWxk",
+            "inputs": {
+                "uuid": {
+                    "value": "Compendium.pf2e.spells-srd.Item.yHujiDQPdtXW797e"
+                }
+            },
+            "key": "item-source",
+            "outputs": {
+                "item": {
+                    "ids": [
+                        "PZGLRxLnnCkuXknX.inputs.item"
+                    ]
+                }
+            },
+            "position": {
+                "x": 2613.5,
+                "y": 1156.25
+            },
+            "type": "value"
+        },
+        {
+            "_id": "NvWEqA2sznIDJ9tK",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": false,
+                        "group": "",
+                        "key": "output",
+                        "type": "target"
+                    }
+                ],
+                "outs": []
+            },
+            "key": "variable-getter",
+            "outputs": {
+                "output": {
+                    "ids": [
+                        "PZGLRxLnnCkuXknX.inputs.origin"
+                    ]
+                }
+            },
+            "position": {
+                "x": 2675.5,
+                "y": 1124.25
+            },
+            "target": "5ihYn9u4nbO0s2v5.outputs.this",
+            "type": "variable"
+        },
+        {
+            "_id": "P3QFowJg38wIRDnw",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": false,
+                        "group": "",
+                        "key": "output",
+                        "type": "target"
+                    }
+                ],
+                "outs": []
+            },
+            "key": "variable-getter",
+            "outputs": {
+                "output": {
+                    "ids": [
+                        "qITOKOStz9bfrJLx.inputs.target"
+                    ]
+                }
+            },
+            "position": {
+                "x": 2861.5,
+                "y": 1015.25
+            },
+            "target": "P0t72oPHvb15fNCn.outputs.other",
+            "type": "variable"
+        },
+        {
+            "_id": "FA2Vwppw4NsqAdjf",
+            "inputs": {
+                "a": {
+                    "ids": [
+                        "ZaTbSV3ts4sb4sCS.outputs.system|attributes|hp|value"
+                    ]
+                },
+                "b": {
+                    "ids": [
+                        "ZaTbSV3ts4sb4sCS.outputs.system|attributes|hp|max"
+                    ]
+                },
+                "in": {
+                    "ids": [
+                        "ZaTbSV3ts4sb4sCS.outputs.out"
+                    ]
+                }
+            },
+            "key": "get-percent",
+            "outputs": {
+                "out": {
+                    "ids": [
+                        "mwEAca8RYkRyfE2A.inputs.in"
+                    ]
+                },
+                "result": {
+                    "ids": [
+                        "mwEAca8RYkRyfE2A.inputs.a"
+                    ]
+                }
+            },
+            "position": {
+                "x": 2323.5,
+                "y": 755.25
+            },
+            "type": "action"
+        },
+        {
+            "_id": "mwEAca8RYkRyfE2A",
+            "inputs": {
+                "a": {
+                    "ids": [
+                        "FA2Vwppw4NsqAdjf.outputs.result"
+                    ]
+                },
+                "b": {
+                    "value": 100
+                },
+                "in": {
+                    "ids": [
+                        "FA2Vwppw4NsqAdjf.outputs.out"
+                    ]
+                }
+            },
+            "key": "lt-number",
+            "outputs": {
+                "true": {
+                    "ids": [
+                        "1ks47feRs7FyKufE.inputs.in"
+                    ]
+                }
+            },
+            "position": {
+                "x": 2565,
+                "y": 827.75
+            },
+            "type": "logic"
+        },
+        {
+            "_id": "EJVHOhvR7aNu3ros",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": false,
+                        "group": "",
+                        "key": "output",
+                        "type": "target"
+                    }
+                ],
+                "outs": []
+            },
+            "key": "variable-getter",
+            "outputs": {
+                "output": {
+                    "ids": [
+                        "3KnggXiDcDNVYHwu.inputs.target"
+                    ]
+                }
+            },
+            "position": {
+                "x": 1390.5,
+                "y": 665.25
+            },
+            "target": "P0t72oPHvb15fNCn.outputs.other",
+            "type": "variable"
+        },
+        {
+            "_id": "aEDUz9kBMgKOj0UA",
+            "inputs": {
+                "a": {
+                    "ids": [
+                        "P0t72oPHvb15fNCn.outputs.other"
+                    ]
+                },
+                "b": {
+                    "ids": [
+                        "GfinDfnBwpomyLpc.outputs.output"
+                    ]
+                },
+                "in": {
+                    "ids": [
+                        "P0t72oPHvb15fNCn.outputs.out"
+                    ]
+                }
+            },
+            "key": "eq-actor",
+            "outputs": {
+                "false": {
+                    "ids": [
+                        "3KnggXiDcDNVYHwu.inputs.in"
+                    ]
+                },
+                "true": {
+                    "ids": []
+                }
+            },
+            "position": {
+                "x": 1350,
+                "y": 533.75
+            },
+            "type": "logic"
+        },
+        {
+            "_id": "GfinDfnBwpomyLpc",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": false,
+                        "group": "",
+                        "key": "output",
+                        "type": "target"
+                    }
+                ],
+                "outs": []
+            },
+            "key": "variable-getter",
+            "outputs": {
+                "output": {
+                    "ids": [
+                        "aEDUz9kBMgKOj0UA.inputs.b"
+                    ]
+                }
+            },
+            "position": {
+                "x": 1190.5,
+                "y": 610.25
+            },
+            "target": "5ihYn9u4nbO0s2v5.outputs.this",
+            "type": "variable"
+        },
+        {
+            "_id": "ZaTbSV3ts4sb4sCS",
+            "custom": {
+                "outputs": [
+                    {
+                        "custom": true,
+                        "group": "",
+                        "key": "system|attributes|hp|value",
+                        "label": "HP Value",
+                        "type": "number"
+                    },
+                    {
+                        "custom": true,
+                        "group": "",
+                        "key": "system|attributes|hp|max",
+                        "label": "HP Max",
+                        "type": "number"
+                    }
+                ]
+            },
+            "inputs": {
+                "in": {
+                    "ids": [
+                        "2BmdcVjvExQKOVvF.outputs.true"
+                    ]
+                },
+                "input": {
+                    "ids": [
+                        "silGjVLrwluCIRe9.outputs.output"
+                    ]
+                }
+            },
+            "key": "actor-splitter",
+            "outputs": {
+                "out": {
+                    "ids": [
+                        "FA2Vwppw4NsqAdjf.inputs.in"
+                    ]
+                },
+                "system|attributes|hp|max": {
+                    "ids": [
+                        "FA2Vwppw4NsqAdjf.inputs.b"
+                    ]
+                },
+                "system|attributes|hp|value": {
+                    "ids": [
+                        "FA2Vwppw4NsqAdjf.inputs.a"
+                    ]
+                }
+            },
+            "position": {
+                "x": 2142,
+                "y": 733.23
+            },
+            "type": "splitter"
+        },
+        {
+            "_id": "silGjVLrwluCIRe9",
+            "custom": {
+                "inputs": [],
+                "outputs": [
+                    {
+                        "custom": false,
+                        "group": "",
+                        "key": "output",
+                        "type": "target"
+                    }
+                ],
+                "outs": []
+            },
+            "key": "variable-getter",
+            "outputs": {
+                "output": {
+                    "ids": [
+                        "ZaTbSV3ts4sb4sCS.inputs.input"
+                    ]
+                }
+            },
+            "position": {
+                "x": 1997.5,
+                "y": 791.25
+            },
+            "target": "P0t72oPHvb15fNCn.outputs.other",
+            "type": "variable"
+        }
+    ],
+    "variables": {
+        "1vgIr9cH83WjUQua.outputs.item": {
+            "global": false,
+            "label": "Triggering Effect",
+            "type": "item"
+        },
+        "nIYuadExTAcOAIG6.outputs.level": {
+            "global": false,
+            "label": "Effect Level",
+            "type": "number"
+        },
+        "P0t72oPHvb15fNCn.outputs.other": {
+            "global": false,
+            "label": "Scene Target",
+            "type": "target"
+        },
+        "ZaTbSV3ts4sb4sCS.outputs.system|attributes|hp|max": {
+            "global": false,
+            "label": "HP Max",
+            "type": "number"
+        },
+        "ZaTbSV3ts4sb4sCS.outputs.system|attributes|hp|value": {
+            "global": false,
+            "label": "HP Value",
+            "type": "number"
+        }
+    }
+}
