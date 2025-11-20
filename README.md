@@ -6,7 +6,7 @@ Enable the module and you will see this module's triggers. They are **disabled**
 
 Here's the list of abilities currently handled by triggers in some capacity.
 <details>
-  <summary>The List (As of 0.5.0)</summary>
+  <summary>The List (As of 0.5.2)</summary>
 
    - Equipment
      - Critical Specialization (Bow, Spear, and Sword only)
