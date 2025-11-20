@@ -143,7 +143,7 @@
                     }
                 },
                 "position": {
-                    "x": 1029.5,
+                    "x": 1026.5,
                     "y": 252.75
                 },
                 "type": "logic"
@@ -189,7 +189,7 @@
                 },
                 "key": "add-temporary",
                 "position": {
-                    "x": 1663,
+                    "x": 1670,
                     "y": 240.75
                 },
                 "type": "action"
@@ -220,8 +220,8 @@
                     }
                 },
                 "position": {
-                    "x": 1450.5,
-                    "y": 433.25
+                    "x": 1429.5,
+                    "y": 384.25
                 },
                 "type": "value"
             },
@@ -243,8 +243,8 @@
                     }
                 },
                 "position": {
-                    "x": 1340.5,
-                    "y": 587.25
+                    "x": 1168.5,
+                    "y": 493.25
                 },
                 "type": "value"
             },
@@ -271,8 +271,8 @@
                     }
                 },
                 "position": {
-                    "x": 1186.5,
-                    "y": 611.25
+                    "x": 1015.5,
+                    "y": 535.25
                 },
                 "target": "cTXrbTV5mw9gTPhS.outputs.this",
                 "type": "variable"
@@ -300,8 +300,8 @@
                     }
                 },
                 "position": {
-                    "x": 1458.5,
-                    "y": 366.25
+                    "x": 1668.5,
+                    "y": 399.25
                 },
                 "target": "cTXrbTV5mw9gTPhS.outputs.other",
                 "type": "variable"
@@ -317,6 +317,14 @@
                         "ids": [
                             "aBiK32g7r5WsPOa3.outputs.true"
                         ]
+                    },
+                    "target": {
+                        "ids": [
+                            "4cqYEgU5NThwEAPA.outputs.output"
+                        ]
+                    },
+                    "trigger": {
+                        "value": "tGyc4TEe2PkadTx1"
                     }
                 },
                 "key": "has-temporary",
@@ -331,8 +339,8 @@
                     }
                 },
                 "position": {
-                    "x": 791,
-                    "y": 211.75
+                    "x": 774,
+                    "y": 209.75
                 },
                 "type": "condition"
             },
@@ -374,6 +382,7 @@
                         ]
                     },
                     "uuid": {
+                        "ids": [],
                         "value": "Compendium.pf2e.feats-srd.Item.N4wCUZH2KG6FoGqh"
                     }
                 },
@@ -386,16 +395,45 @@
                     }
                 },
                 "position": {
-                    "x": 552,
-                    "y": 213.75
+                    "x": 544,
+                    "y": 210.75
                 },
                 "type": "condition"
+            },
+            {
+                "_id": "4cqYEgU5NThwEAPA",
+                "custom": {
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "custom": false,
+                            "group": "",
+                            "key": "output",
+                            "type": "target"
+                        }
+                    ],
+                    "outs": []
+                },
+                "key": "variable-getter",
+                "outputs": {
+                    "output": {
+                        "ids": [
+                            "phGggMQFmvEzqyNB.inputs.target"
+                        ]
+                    }
+                },
+                "position": {
+                    "x": 639.5,
+                    "y": 378.25
+                },
+                "target": "cTXrbTV5mw9gTPhS.outputs.other",
+                "type": "variable"
             }
         ]
     },
     {
         "_id": "DC7rsacX7zSEdmGG",
-        "description": "<p>If the attacker has the Shared Stratagem auxiliary effect, remove both that effect and the trigger effect from the target.</p>",
+        "description": "<p>If the attacker has the Shared Stratagem auxiliary effect and the target is the Devise a Stratagem target, remove the auxiliary effect if they miss on their attack. If the attack is rerolled into a success, add the effect back.</p>",
         "folder": "Feats & Features",
         "name": "Shared Strategem (Attack Rolled, Ally)",
         "nodes": [
@@ -403,12 +441,17 @@
                 "_id": "5pDBmGdrgI7MxYQc",
                 "key": "attack-roll",
                 "outputs": {
+                    "options": {
+                        "ids": [
+                            "c8jjuwZvskLYVqmO.inputs.list"
+                        ]
+                    },
                     "other": {
                         "ids": []
                     },
                     "out": {
                         "ids": [
-                            "9cyyp8WRdt1FhZpd.inputs.in"
+                            "c8jjuwZvskLYVqmO.inputs.in"
                         ]
                     }
                 },
@@ -427,7 +470,7 @@
                     },
                     "in": {
                         "ids": [
-                            "9cyyp8WRdt1FhZpd.outputs.true"
+                            "c8jjuwZvskLYVqmO.outputs.true"
                         ]
                     },
                     "target": {
@@ -444,101 +487,13 @@
                 "outputs": {
                     "true": {
                         "ids": [
-                            "9ldc5OSrWqxnWSys.inputs.in"
+                            "g07KLzLcCH58Fsws.inputs.in"
                         ]
                     }
                 },
                 "position": {
                     "x": 775,
                     "y": 197.75
-                },
-                "type": "condition"
-            },
-            {
-                "_id": "qcyPdff4QG1ZxqdW",
-                "inputs": {
-                    "identifier": {
-                        "ids": [],
-                        "value": "shared-stratagem"
-                    },
-                    "in": {
-                        "ids": [
-                            "9ldc5OSrWqxnWSys.outputs.out"
-                        ]
-                    },
-                    "target": {
-                        "ids": [
-                            "XRIZMny9SkUSEik0.outputs.output"
-                        ]
-                    },
-                    "trigger": {
-                        "ids": [],
-                        "value": "tGyc4TEe2PkadTx1"
-                    }
-                },
-                "key": "remove-temporary",
-                "position": {
-                    "x": 1202,
-                    "y": 242.75
-                },
-                "type": "action"
-            },
-            {
-                "_id": "XRIZMny9SkUSEik0",
-                "custom": {
-                    "inputs": [],
-                    "outputs": [
-                        {
-                            "custom": false,
-                            "group": "",
-                            "key": "output",
-                            "type": "target"
-                        }
-                    ],
-                    "outs": []
-                },
-                "key": "variable-getter",
-                "outputs": {
-                    "output": {
-                        "ids": [
-                            "qcyPdff4QG1ZxqdW.inputs.target"
-                        ]
-                    }
-                },
-                "position": {
-                    "x": 1197.5,
-                    "y": 406.25
-                },
-                "target": "5pDBmGdrgI7MxYQc.outputs.other",
-                "type": "variable"
-            },
-            {
-                "_id": "9cyyp8WRdt1FhZpd",
-                "inputs": {
-                    "in": {
-                        "ids": [
-                            "5pDBmGdrgI7MxYQc.outputs.out"
-                        ]
-                    },
-                    "uuid": {
-                        "ids": [],
-                        "value": "Compendium.pf2e-trigger-trove.auxiliary-items.Item.u6Czd41XiuFK70J3"
-                    }
-                },
-                "key": "has-item",
-                "outputs": {
-                    "item": {
-                        "ids": []
-                    },
-                    "true": {
-                        "ids": [
-                            "T4fvzd39ejXTnm4o.inputs.in"
-                        ]
-                    }
-                },
-                "position": {
-                    "x": 541,
-                    "y": 199.75
                 },
                 "type": "condition"
             },
@@ -572,35 +527,375 @@
                 "type": "variable"
             },
             {
-                "_id": "9ldc5OSrWqxnWSys",
+                "_id": "nHqpguADo63OtPfL",
                 "inputs": {
-                    "in": {
-                        "ids": [
-                            "T4fvzd39ejXTnm4o.outputs.true"
-                        ]
-                    },
-                    "item": {
-                        "ids": [
-                            "CBl1SIsLFo7dajzd.outputs.output"
-                        ]
+                    "input": {
+                        "value": "failure"
                     }
                 },
-                "key": "delete-item",
+                "key": "success-value",
                 "outputs": {
-                    "out": {
+                    "value": {
                         "ids": [
-                            "qcyPdff4QG1ZxqdW.inputs.in"
+                            "g07KLzLcCH58Fsws.inputs.b"
                         ]
                     }
                 },
                 "position": {
-                    "x": 1013,
-                    "y": 222.5
+                    "x": 828.5,
+                    "y": 398.25
+                },
+                "type": "value"
+            },
+            {
+                "_id": "NG4WRmeoMrFY5jGB",
+                "custom": {
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "custom": false,
+                            "group": "",
+                            "key": "output",
+                            "type": "number"
+                        }
+                    ],
+                    "outs": []
+                },
+                "key": "variable-getter",
+                "outputs": {
+                    "output": {
+                        "ids": [
+                            "g07KLzLcCH58Fsws.inputs.a"
+                        ]
+                    }
+                },
+                "position": {
+                    "x": 915.5,
+                    "y": 361.25
+                },
+                "target": "5pDBmGdrgI7MxYQc.outputs.outcome",
+                "type": "variable"
+            },
+            {
+                "_id": "DUrnSg9nSwh49OSi",
+                "inputs": {
+                    "entry": {
+                        "value": "check:reroll"
+                    },
+                    "in": {
+                        "ids": [
+                            "g07KLzLcCH58Fsws.outputs.false"
+                        ]
+                    },
+                    "list": {
+                        "ids": [
+                            "D2bOdvCOfYpyptPk.outputs.output"
+                        ]
+                    }
+                },
+                "key": "contains-entry",
+                "outputs": {
+                    "false": {
+                        "ids": []
+                    },
+                    "true": {
+                        "ids": [
+                            "DcIbSZHsCsIsR3RQ.inputs.in"
+                        ]
+                    }
+                },
+                "position": {
+                    "x": 1242,
+                    "y": 280.75
+                },
+                "type": "condition"
+            },
+            {
+                "_id": "D2bOdvCOfYpyptPk",
+                "custom": {
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "custom": false,
+                            "group": "",
+                            "key": "output",
+                            "type": "list"
+                        }
+                    ],
+                    "outs": []
+                },
+                "key": "variable-getter",
+                "outputs": {
+                    "output": {
+                        "ids": [
+                            "DUrnSg9nSwh49OSi.inputs.list"
+                        ]
+                    }
+                },
+                "position": {
+                    "x": 1088.5,
+                    "y": 341.25
+                },
+                "target": "5pDBmGdrgI7MxYQc.outputs.options",
+                "type": "variable"
+            },
+            {
+                "_id": "g07KLzLcCH58Fsws",
+                "inputs": {
+                    "a": {
+                        "ids": [
+                            "NG4WRmeoMrFY5jGB.outputs.output"
+                        ]
+                    },
+                    "b": {
+                        "ids": [
+                            "nHqpguADo63OtPfL.outputs.value"
+                        ]
+                    },
+                    "in": {
+                        "ids": [
+                            "T4fvzd39ejXTnm4o.outputs.true"
+                        ]
+                    }
+                },
+                "key": "lte-number",
+                "outputs": {
+                    "false": {
+                        "ids": [
+                            "DUrnSg9nSwh49OSi.inputs.in"
+                        ]
+                    },
+                    "true": {
+                        "ids": [
+                            "R7Wgz0A93FOPnhhh.inputs.in"
+                        ]
+                    }
+                },
+                "position": {
+                    "x": 1046,
+                    "y": 212.25
+                },
+                "type": "logic"
+            },
+            {
+                "_id": "DcIbSZHsCsIsR3RQ",
+                "inputs": {
+                    "duplicate": {
+                        "value": false
+                    },
+                    "in": {
+                        "ids": [
+                            "DUrnSg9nSwh49OSi.outputs.true"
+                        ]
+                    },
+                    "uuid": {
+                        "value": "Compendium.pf2e-trigger-trove.auxiliary-items.Item.u6Czd41XiuFK70J3"
+                    }
+                },
+                "key": "create-item",
+                "outputs": {
+                    "out": {
+                        "ids": []
+                    }
+                },
+                "position": {
+                    "x": 1481,
+                    "y": 281.75
                 },
                 "type": "action"
             },
             {
-                "_id": "CBl1SIsLFo7dajzd",
+                "_id": "c8jjuwZvskLYVqmO",
+                "inputs": {
+                    "entry": {
+                        "value": "self:effect:shared-stratagem"
+                    },
+                    "in": {
+                        "ids": [
+                            "5pDBmGdrgI7MxYQc.outputs.out"
+                        ]
+                    },
+                    "list": {
+                        "ids": [
+                            "5pDBmGdrgI7MxYQc.outputs.options"
+                        ]
+                    }
+                },
+                "key": "contains-entry",
+                "outputs": {
+                    "true": {
+                        "ids": [
+                            "T4fvzd39ejXTnm4o.inputs.in"
+                        ]
+                    }
+                },
+                "position": {
+                    "x": 540.5,
+                    "y": 193.75
+                },
+                "type": "condition"
+            },
+            {
+                "_id": "R7Wgz0A93FOPnhhh",
+                "inputs": {
+                    "in": {
+                        "ids": [
+                            "g07KLzLcCH58Fsws.outputs.true"
+                        ]
+                    },
+                    "uuid": {
+                        "value": "Compendium.pf2e-trigger-trove.auxiliary-items.Item.u6Czd41XiuFK70J3"
+                    }
+                },
+                "key": "remove-item",
+                "position": {
+                    "x": 1249,
+                    "y": 121.75
+                },
+                "type": "action"
+            }
+        ],
+        "variables": {}
+    },
+    {
+        "_id": "92acwAQIN8qficIR",
+        "description": "<p>If the damage origin has the Shared Stratagem auxiliary effect and the target is the Devise a Stratagem target, remove both the auxiliary and trigger effects.</p>",
+        "folder": "Feats & Features",
+        "name": "Shared Stratagem (Damage Taken)",
+        "nodes": [
+            {
+                "_id": "ek6LTl7g6nIKre5G",
+                "key": "damage-taken",
+                "outputs": {
+                    "other": {
+                        "ids": [
+                            "LuhJ83zQnNEHht5w.inputs.target"
+                        ]
+                    },
+                    "out": {
+                        "ids": [
+                            "LuhJ83zQnNEHht5w.inputs.in"
+                        ]
+                    }
+                },
+                "position": {
+                    "x": 350,
+                    "y": 200
+                },
+                "type": "event"
+            },
+            {
+                "_id": "LuhJ83zQnNEHht5w",
+                "inputs": {
+                    "in": {
+                        "ids": [
+                            "ek6LTl7g6nIKre5G.outputs.out"
+                        ]
+                    },
+                    "target": {
+                        "ids": [
+                            "ek6LTl7g6nIKre5G.outputs.other"
+                        ]
+                    },
+                    "uuid": {
+                        "value": "Compendium.pf2e-trigger-trove.auxiliary-items.Item.u6Czd41XiuFK70J3"
+                    }
+                },
+                "key": "has-item",
+                "outputs": {
+                    "true": {
+                        "ids": [
+                            "TZhinmoI9SHKEQVp.inputs.in"
+                        ]
+                    }
+                },
+                "position": {
+                    "x": 548,
+                    "y": 234.75
+                },
+                "type": "condition"
+            },
+            {
+                "_id": "TZhinmoI9SHKEQVp",
+                "inputs": {
+                    "identifier": {
+                        "value": "shared-stratagem"
+                    },
+                    "in": {
+                        "ids": [
+                            "LuhJ83zQnNEHht5w.outputs.true"
+                        ]
+                    },
+                    "trigger": {
+                        "value": "tGyc4TEe2PkadTx1"
+                    }
+                },
+                "key": "has-temporary",
+                "outputs": {
+                    "true": {
+                        "ids": [
+                            "poXKOrkCQXzNqGSd.inputs.in"
+                        ]
+                    }
+                },
+                "position": {
+                    "x": 791,
+                    "y": 234.75
+                },
+                "type": "condition"
+            },
+            {
+                "_id": "poXKOrkCQXzNqGSd",
+                "inputs": {
+                    "identifier": {
+                        "value": "shared-stratagem"
+                    },
+                    "in": {
+                        "ids": [
+                            "TZhinmoI9SHKEQVp.outputs.true"
+                        ]
+                    },
+                    "trigger": {
+                        "value": "tGyc4TEe2PkadTx1"
+                    }
+                },
+                "key": "remove-temporary",
+                "outputs": {
+                    "out": {
+                        "ids": [
+                            "Hzio4VMwkhd14Rl0.inputs.in"
+                        ]
+                    }
+                },
+                "position": {
+                    "x": 1053,
+                    "y": 234.75
+                },
+                "type": "action"
+            },
+            {
+                "_id": "Hzio4VMwkhd14Rl0",
+                "inputs": {
+                    "in": {
+                        "ids": [
+                            "poXKOrkCQXzNqGSd.outputs.out"
+                        ]
+                    },
+                    "item": {
+                        "ids": [
+                            "PDI9ABwTrIw1EeIt.outputs.output"
+                        ]
+                    }
+                },
+                "key": "delete-item",
+                "position": {
+                    "x": 1312,
+                    "y": 234.75
+                },
+                "type": "action"
+            },
+            {
+                "_id": "PDI9ABwTrIw1EeIt",
                 "custom": {
                     "inputs": [],
                     "outputs": [
@@ -617,20 +912,20 @@
                 "outputs": {
                     "output": {
                         "ids": [
-                            "9ldc5OSrWqxnWSys.inputs.item"
+                            "Hzio4VMwkhd14Rl0.inputs.item"
                         ]
                     }
                 },
                 "position": {
-                    "x": 950.5,
-                    "y": 362.25
+                    "x": 1191.5,
+                    "y": 404.25
                 },
-                "target": "9cyyp8WRdt1FhZpd.outputs.item",
+                "target": "LuhJ83zQnNEHht5w.outputs.item",
                 "type": "variable"
             }
         ],
         "variables": {
-            "9cyyp8WRdt1FhZpd.outputs.item": {
+            "LuhJ83zQnNEHht5w.outputs.item": {
                 "global": false,
                 "label": "Aux Effect",
                 "type": "item"
