@@ -345,7 +345,7 @@
                 },
                 "message": {
                     "ids": [],
-                    "value": "TRIGGERTROVE.TrickstersMirrors.Item.Note.Hit"
+                    "value": "TRIGGERTROVE.TrickstersMirrors.Trigger.Note.Hit"
                 },
                 "target": {
                     "ids": [
@@ -498,7 +498,7 @@
                 },
                 "note": {
                     "ids": [],
-                    "value": "TRIGGERTROVE.TrickstersMirrors.Item.Note.Miss"
+                    "value": "TRIGGERTROVE.TrickstersMirrors.Trigger.Note.Miss"
                 },
                 "options": {
                     "ids": []

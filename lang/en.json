@@ -291,15 +291,16 @@
         },
         "TrickstersMirrors": {
             "Item": {
-                "Note": {
-                    "Hit": "<strong>Trickster's Mirror</strong> The attack hits you! All your mirrors remain.",
-                    "Miss": "<p>The attack misses you! One of your mirrors is destroyed. If the attacker was within 5 feet, they must succeed at a @Check[will|basic|options:item:type:spell|traits:animist,focus,illusion,mental,visual] save or take mental damage as they believe themselves cut by a shower of glass shards from the breaking mirror.</p>"
-                },
+                "Note": "A damaging effect that affects all targets within your space destroys all of the mirrors.",
                 "ResourceLabel": "Trickster's Mirrors"
             },
             "Trigger": {
                 "AttackRolled": {
                     "Description": "<p>If the attacked creature has @UUID[Compendium.pf2e-trigger-trove.auxiliary-items.Item.SlgTXSJRSL5UplfQ]{Aux Effect: Trickster's Mirrors}, automatically reduce the Trickster's Mirrors resource depending on both the outcome of the attack and a randomly generated number, as described by the spell. If the attacker is within 5 feet, roll damage when a mirror is destroyed.</p><p>It's recommended that the auxiliary effect is added to the spell's description for easy access.</p>"
+                },
+                "Note": {
+                    "Hit": "<strong>Trickster's Mirror</strong> The attack hits you! All your mirrors remain.",
+                    "Miss": "<p>The attack misses you! One of your mirrors is destroyed. If the attacker was within 5 feet, they must succeed at a @Check[will|basic|options:item:type:spell|traits:animist,focus,illusion,mental,visual] save or take mental damage as they believe themselves cut by a shower of glass shards from the breaking mirror.</p>"
                 }
             }
         },
