@@ -1,6 +1,6 @@
 {
-  "name": "Aux Ability: Gibbering",
-  "type": "action",
+  "name": "Aux Effect: Gibbering Addendum",
+  "type": "effect",
   "effects": [],
   "system": {
     "_migration": {
@@ -8,11 +8,11 @@
       "previous": null
     },
     "description": {
-      "value": "<p>Auxiliary ability for @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.dEAneTvoPuQXZoLR]{Gibbering Mouther}'s Gibbering trigger</p><p>It will temporarily add a description addendum to Gibbering, including its immunity effect.</p>",
+      "value": "<p>Auxiliary effect for @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.dEAneTvoPuQXZoLR]{Gibbering Mouther}'s Gibbering trigger</p><p>It will temporarily add a description addendum to Gibbering, including its immunity effect.</p>",
       "gm": ""
     },
     "publication": {
-      "title": "PF2e Trigger Trove",
+      "title": "PF2E Trigger Trove",
       "authors": "",
       "license": "OGL",
       "remaster": false
@@ -31,7 +31,7 @@
             "text": "TRIGGERTROVE.Generic.Immunity.Addendum.Success"
           },
           {
-            "text": "@UUID[Compendium.pf2e-trigger-trove.auxiliary-items.Item.lab3fNjYMH2OdJuX]{Aux Effect: Gibbering}"
+            "text": "@UUID[Compendium.pf2e-trigger-trove.auxiliary-items.Item.lab3fNjYMH2OdJuX]{Aux Effect: Gibbering Immunity}"
           }
         ],
         "label": "TRIGGERTROVE.Generic.Note.Label"
@@ -42,16 +42,28 @@
       "otherTags": [],
       "value": []
     },
-    "actionType": {
-      "value": "passive"
+    "level": {
+      "value": 1
     },
-    "actions": {
-      "value": null
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
     },
-    "category": null,
-    "deathNote": false
+    "tokenIcon": {
+      "show": true
+    },
+    "unidentified": false,
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "badge": null,
+    "fromSpell": false,
+    "context": null
   },
-  "_id": "nGNLI55jNWiC8e8N",
+  "_id": "jdEV7JRBLzh3jZd7",
   "img": "icons/creatures/eyes/slime-single-red.webp",
   "folder": null,
   "sort": 0,
@@ -68,5 +80,5 @@
     "systemId": "pf2e",
     "systemVersion": "7.7.4"
   },
-  "_key": "!items!nGNLI55jNWiC8e8N"
+  "_key": "!items!jdEV7JRBLzh3jZd7"
 }

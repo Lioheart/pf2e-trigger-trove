@@ -110,8 +110,8 @@
                 }
             },
             "position": {
-                "x": 1783,
-                "y": 365.23
+                "x": 1813,
+                "y": 367.23
             },
             "target": "KbmYmEm4rMEedc9N",
             "type": "subtrigger"
@@ -149,6 +149,7 @@
             "_id": "2KHbLYKMXhjvTJjO",
             "inputs": {
                 "input": {
+                    "ids": [],
                     "value": "dread-flickering"
                 }
             },
@@ -266,6 +267,7 @@
                     ]
                 },
                 "uuid": {
+                    "ids": [],
                     "value": "Compendium.pf2e-trigger-trove.auxiliary-items.Item.1D7YdXwRsOncOhcW"
                 }
             },
@@ -316,6 +318,7 @@
             "_id": "t8u51y1V87zvftb9",
             "inputs": {
                 "duplicate": {
+                    "ids": [],
                     "value": false
                 },
                 "in": {
@@ -329,7 +332,8 @@
                     ]
                 },
                 "uuid": {
-                    "value": "Compendium.pf2e-trigger-trove.auxiliary-items.Item.IC5FPhP6xdio1WUd"
+                    "ids": [],
+                    "value": "Compendium.pf2e-trigger-trove.auxiliary-items.Item.WrV9fZMETFDXqawL"
                 }
             },
             "key": "create-item",
@@ -394,8 +398,8 @@
             },
             "key": "delete-item",
             "position": {
-                "x": 2037,
-                "y": 408.75
+                "x": 2075,
+                "y": 409.75
             },
             "type": "action"
         },
@@ -433,11 +437,13 @@
         "2KHbLYKMXhjvTJjO.outputs.value": {
             "global": false,
             "label": "Dread Flickering",
+            "locked": false,
             "type": "text"
         },
         "t8u51y1V87zvftb9.outputs.item": {
             "global": false,
-            "label": "Aux Ability",
+            "label": "Addendum",
+            "locked": false,
             "type": "item"
         },
         "y35nm7RSdUtdyWBp.outputs.source": {

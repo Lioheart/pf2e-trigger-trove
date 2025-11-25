@@ -34,6 +34,7 @@
                     ]
                 },
                 "targets": {
+                    "ids": [],
                     "value": "all"
                 }
             },
@@ -82,8 +83,8 @@
                 }
             },
             "position": {
-                "x": 1311,
-                "y": 219.23000000000002
+                "x": 1332,
+                "y": 222.23000000000002
             },
             "target": "KbmYmEm4rMEedc9N",
             "type": "subtrigger"
@@ -92,6 +93,7 @@
             "_id": "F88Wv1bKQAcuyPi1",
             "inputs": {
                 "input": {
+                    "ids": [],
                     "value": "gibbering"
                 }
             },
@@ -171,6 +173,7 @@
             "_id": "7JyKbPOpwY5sUOZ8",
             "inputs": {
                 "duplicate": {
+                    "ids": [],
                     "value": false
                 },
                 "in": {
@@ -184,7 +187,8 @@
                     ]
                 },
                 "uuid": {
-                    "value": "Compendium.pf2e-trigger-trove.auxiliary-items.Item.nGNLI55jNWiC8e8N"
+                    "ids": [],
+                    "value": "Compendium.pf2e-trigger-trove.auxiliary-items.Item.jdEV7JRBLzh3jZd7"
                 }
             },
             "key": "create-item",
@@ -222,8 +226,8 @@
                 }
             },
             "position": {
-                "x": 1578,
-                "y": 218.75
+                "x": 1587,
+                "y": 222.75
             },
             "type": "action"
         },
@@ -250,8 +254,8 @@
                 }
             },
             "position": {
-                "x": 1446.5,
-                "y": 353.25
+                "x": 1459.5,
+                "y": 365.25
             },
             "target": "7JyKbPOpwY5sUOZ8.outputs.item",
             "type": "variable"
@@ -294,6 +298,7 @@
                     ]
                 },
                 "uuid": {
+                    "ids": [],
                     "value": "Compendium.pf2e-trigger-trove.auxiliary-items.Item.lab3fNjYMH2OdJuX"
                 }
             },
@@ -318,17 +323,20 @@
     "variables": {
         "7JyKbPOpwY5sUOZ8.outputs.item": {
             "global": false,
-            "label": "Aux Ability",
+            "label": "Addendum",
+            "locked": false,
             "type": "item"
         },
         "F88Wv1bKQAcuyPi1.outputs.value": {
             "global": false,
             "label": "Gibbering",
+            "locked": false,
             "type": "text"
         },
         "SdMeUnH2ZD43FwU9.outputs.source": {
             "global": false,
             "label": "Aura Source",
+            "locked": false,
             "type": "target"
         }
     }
