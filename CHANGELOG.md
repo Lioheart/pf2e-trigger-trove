@@ -1,5 +1,5 @@
 ## 0.7.0
-- ## Housekeeping
+- **Housekeeping**
   - Update minimum PF2e Trigger version to 2.19.0
 - **New Triggers**
   - **Phase Familiar, Rapid Retreat, Warping Pull**
