@@ -207,6 +207,13 @@
                 }
             }
         },
+        "RevitalizingFinisher": {
+            "Trigger": {
+                "AttackRolled": {
+                    "Description": "When a @UUID[Compendium.pf2e.feats-srd.Item.83zzG4XBiL5I3NZv]{Revitalizing Finisher} hits, the origin creature and all allies within 30 feet of it gain temporary Hit Points equal to half the origin's level."
+                }
+            }
+        },
         "SafeElements": {
             "Subtrigger": {
                 "Check": {
