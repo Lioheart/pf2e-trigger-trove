@@ -8,7 +8,7 @@
   - Revitalizing Finisher
     - _Attack Rolled:_ When a creature is hit by a Revitalizing Finisher, the attack origin and all allies within 30 feet of it gain temporary Hit Points equal to half the origin's level. On a failure, only the attack origin gains this benefit.
   - Swaggering Initiative
-    - _Damage Taken:_ When a character using Swaggering Initiative is the first one to take a turn in combat, they receive panache.
+    - _Turn Started:_ When a character using Swaggering Initiative is the first one to take a turn in combat, they receive panache.
   - Unbalancing Finisher
     - _Damage Taken:_ When a creature takes damage from Unbalancing Finisher, it is off-guard until the end of the origin's next turn.
 
