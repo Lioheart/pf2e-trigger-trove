@@ -291,15 +291,16 @@
         },
         "TrickstersMirrors": {
             "Item": {
-                "Note": {
-                    "Hit": "<strong>Lustro Oszusta</strong> Atak cię trafia! Wszystkie twoje lustra pozostają na swoim miejscu.",
-                    "Miss": "<p>Atak cię nie dosięga! Jedno z twoich luster zostaje zniszczone. Jeśli atakujący znajdował się w odległości mniejszej niż 5 stóp, musi wykonać rzut obronny @Check[will|basic|options:item:type:spell|traits:animist,focus,illusion,mental,visual] lub otrzymać obrażenia psychiczne, ponieważ wydaje mu się, że został skaleczony przez deszcz odłamków szkła z rozbitego lustra.</p>"
-                },
+                "Note": "Efekt obrażeń, który oddziałuje na wszystkie cele w twojej przestrzeni, niszczy wszystkie lustra.",
                 "ResourceLabel": "Lustra Oszusta"
             },
             "Trigger": {
                 "AttackRolled": {
                     "Description": "<p>Jeśli zaatakowana istota posiada @UUID[Compendium.pf2e-trigger-trove.auxiliary-items.Item.SlgTXSJRSL5UplfQ], automatycznie zmniejsz zasoby Luster Oszusta w zależności od wyniku ataku i losowo wygenerowanej liczby, zgodnie z opisem zaklęcia. Jeśli atakujący znajduje się w odległości 5 stóp, zrzuć kostką, aby określić obrażenia, gdy lustro zostanie zniszczone.</p><p>Zaleca się dodanie efektu pomocniczego do opisu zaklęcia, aby ułatwić dostęp do niego.</p>"
+                },
+                "Note": {
+                    "Hit": "<strong>Lustro Oszusta</strong> Atak cię trafia! Wszystkie twoje lustra pozostają na swoim miejscu.",
+                    "Miss": "<p>Atak cię nie dosięga! Jedno z twoich luster zostaje zniszczone. Jeśli atakujący znajdował się w odległości mniejszej niż 5 stóp, musi wykonać rzut obronny @Check[will|basic|options:item:type:spell|traits:animist,focus,illusion,mental,visual] lub otrzymać obrażenia psychiczne, ponieważ wydaje mu się, że został skaleczony przez deszcz odłamków szkła z rozbitego lustra.</p>"
                 }
             }
         },
