@@ -318,6 +318,13 @@
                 }
             }
         },
+        "UnbalancingFinisher": {
+            "Trigger": {
+                "DamageTaken": {
+                    "Description": "When a creature takes damage from an @UUID[Compendium.pf2e.feats-srd.Item.VXA50vhIRCBt4vvP]{Unbalancing Finisher}, it is off-guard until the end of the origin's next turn."
+                }
+            }
+        },
         "VibrantThorns": {
             "Item": {
                 "Addendum": "Anytime you cast a vitality spell, the thorns' damage increases to d6s of piercing damage until the start of your next turn."
