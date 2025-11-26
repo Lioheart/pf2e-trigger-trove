@@ -262,6 +262,13 @@
                 }
             }
         },
+        "SwaggeringInitiative": {
+            "Trigger": {
+                "TurnStarted": {
+                    "Description": "When a character using @UUID[Compendium.pf2e.feats-srd.Item.NHheDmNB7L4REmlr]{Swaggering Initiative} is the first one to take a turn in combat, they receive panache."
+                }
+            }
+        },
         "SwashbucklerFinisher": {
             "Trigger": {
                 "AttackRolled": {
